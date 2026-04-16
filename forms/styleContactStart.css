@@ -1,0 +1,100 @@
+/* Jena Zamora 04/16/26 */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(240, 180, 190);
+  margin: 0;
+  padding: 20px;
+}
+
+/* CENTER FORM */
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: rgb(241, 224, 245);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h3{
+    text-align: center;
+    font-size: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* =========================
+   MOBILE FIRST GRID
+   ========================= */
+form {
+  display:grid;
+  grid-template-columns: 1fr;
+  gap:10px;
+/* Add grid styles here */
+}
+
+/* INPUTS */
+input,
+select {
+  padding: 10px;
+  border: 2px solid #969393;
+  border-radius: 6px;
+}
+
+/* =========================
+   VALID / INVALID STYLES
+   ========================= */
+
+/* VALID INPUTS */
+input:user-valid,
+select:user-valid {
+    background-color: #9de06a; /* light red */
+  border-color: #2a6231;
+/* Add a background color and border color here.*/
+}
+
+/* INVALID INPUTS */
+input:user-invalid,
+select:user-invalid {
+  background-color: #de7e6b; /* light red */
+  border-color: #712c32;
+  font-size: 1.3em;
+  /* Add a rule here. It could be font-color, font-size, font-weight, font-family */
+}
+
+/* RADIO GROUP */
+.radio-group {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.radio-group label {
+  display: block;
+  margin: 5px 0;
+}
+
+/* SUBMIT BUTTON */
+input[type="submit"] {
+  background-color: rgb(240, 180, 190);
+  color: black;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ====================================
+   DESKTOP UPGRADE for bigger screens
+   ==================================== */
+@media (min-width: 700px) {
+  form {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  input[type="submit"] {
+    grid-column: span 2;
+  }
+
+  .radio-group {
+    grid-column: span 2;
+  }
+}
