@@ -1,0 +1,97 @@
+/* Jena Zamora  04/22/26 */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(37, 81, 122);
+  margin: 20px;
+}
+
+.container {
+  max-width: 700px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 0 auto;  
+  display: grid;  
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+header {
+  text-align: center;
+  padding-bottom: 15px;
+  border-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+header img {
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+
+h2{
+  margin-top: 0px;
+  color:black;
+  font-weight: bold;
+  font-size:2em;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color:#21456d;
+}
+
+input,select {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 10%;
+  margin-bottom:30px;
+}
+
+input[type="radio"] {
+  margin: 0;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap:10px;
+}
+
+button {
+  background:rgb(22, 63, 63);
+  color:white;
+  padding: 12px;
+  margin-top: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  width:300px;
+}
+
+footer {
+   text-align:center;
+   margin-top: 20px;
+   padding-top: 15px;
+}
+
+input:user-valid,
+select:user-valid {
+background:rgb(176, 224, 176);
+border-color:green;
+}
+
+input:user-invalid,
+select:user-invalid {
+background:rgb(218, 140, 140);
+border-color:red;
+}
+
+input[type=text]:focus,
+input[type=date]:focus,
+select:focus {
+    background: pink;
+}
