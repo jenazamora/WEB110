@@ -179,13 +179,10 @@ button {
         flex-direction: column;
         align-items:center;
         gap:10px;
+        font-size:1.5rem;
+        line-height: 1.2;
+        text-algin: center;
     }
-
-  nav a{
-    font-size:1.5rem;
-    line-height: 1.2;
-    text-algin: center;
-  }
   
     h1{
         font-size: 1.8rem;
