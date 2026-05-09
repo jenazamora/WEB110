@@ -153,12 +153,14 @@ button {
   cursor: pointer;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 650px) {
     body{
         padding: 10px;
+        margin:0;
+        overflow-x: hidden;
     }
     
-    .container{
+    .container, .wrapper{
         flex-direction: column;
         width:100%;
     }
@@ -173,13 +175,25 @@ button {
     }
 
     nav{
+        display: flex;
         flex-direction: column;
+        align-items:center;
         gap:10px;
     }
 
+  nav a{
+    font-size:1.5rem;
+    line-height: 1.2;
+    text-algin: center;
+  }
+  
     h1{
         font-size: 1.8rem;
     }
+
+  h6{
+    font-size: 2rem;
+  }
 
     p{
         font-size: 1rem;
